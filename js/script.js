@@ -12,6 +12,6 @@ class User {
   }
 }
 
-//User.staticMathod();
+User.staticMathod();
 
 const user = new User();
