@@ -1,7 +1,7 @@
 'use strict';
 
 let fruit = ['арбузы', 'бананы', 'Вишня'];
-let number = [1, 2, 10, 21, 80, 30, 5];
+let number = [1, 2, 10, 21, 80, 9, 30, 5, 9, 80, 9];
 let items = [
               { name: 'Edward', value: 21 },
               { name: 'Sharpe', value: 37 },
