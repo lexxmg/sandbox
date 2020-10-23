@@ -1,9 +1,18 @@
 'use strict';
 
 class User {
+  constructor(a, b) {
+    this.a = a;
+    this.b = b;
+  }
+
   static staticMathod() {
-    alert(this === User);
+    console.log(this === User);
     console.log(User);
+  }
+
+  static compare(a, b) {
+    return a - b;
   }
 
   foo() {
@@ -14,4 +23,16 @@ class User {
 
 User.staticMathod();
 
-const user = new User();
+const user = new User(50, 90);
+
+
+class Rabbit extends Object {
+  constructor(name) {
+    super();
+    this.name = name;
+  }
+}
+
+const rabbit = new Rabbit('Кроль');
+
+console.log(rabbit);
