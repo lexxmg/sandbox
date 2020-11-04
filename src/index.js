@@ -1,3 +1,7 @@
-import createBtn from './btn.js';
+import Button from './btn.js';
 
-createBtn();
+const btn1 = new Button();
+const btn2 = new Button();
+
+btn1.createBtn();
+btn2.createBtn();
