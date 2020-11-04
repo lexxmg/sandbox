@@ -5,26 +5,39 @@ class Button {
   }
 
   constructor() {
-    this.count = 0;
+    this._btnName = 'btn';
+    this._bgColor = '';
+    this._color = '';
+    this._count = 0;
   }
 
   createBtn() {
-    this.body = document.querySelector('body');
-    this.btn = document.createElement('button');
+    const body = document.querySelector('body');
+    const btn = document.createElement('button');
 
-    this.btn.className = 'btn';
-    this.btn.innerHTML = 'кнопка';
+    btn.className = 'btn';
+    btn.style.backgroundColor = this._bgColor;
+    btn.style.color = this._color;
+    btn.innerHTML = this._btnName;
 
-    this.body.append(this.btn);
+    body.append(btn);
 
-    this.btn.addEventListener('click', () => {
-      this.count++;
+    btn.addEventListener('click', () => {
+      this._count++;
 
-      this.btn.innerHTML = this.count;
-      this.btn.innerHTML += ' ' + this._declOfNum(this.count, ['клик', 'клика', 'кликов']);
+      btn.innerHTML = this._count;
+      btn.innerHTML += ' ' + this._declOfNum(this._count, ['клик', 'клика', 'кликов']);
     });
+  }
 
-    console.log('кнопка создата');
+  options({
+    btnName = this._btnName,
+    bg = this._bgColor,
+    color = this._color
+  } = {}) {
+    this._btnName = btnName;
+    this._bgColor = bg;
+    this._color = color;
   }
 }
 
