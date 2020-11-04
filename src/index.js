@@ -1,10 +1,12 @@
 import Button from './btn.js';
+import './btn.css';
+
 
 const btn1 = new Button();
 const btn2 = new Button();
 
 btn1.options({
-  btnName: 'Кнопка-1',
+  btnName: 'Кнопкa-1',
   bg: 'green',
   color: '#fff'
 });
