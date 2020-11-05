@@ -1,8 +1,4 @@
 class Button {
-  _declOfNum(number, titles) {
-    const cases = [2, 0, 1, 1, 1, 2];
-    return titles[ (number % 100 > 4 && number % 100 < 20) ? 2 : cases[ (number % 10 < 5) ? number % 10 : 5 ] ];
-  }
 
   constructor() {
     this._btnName = 'btn';
@@ -38,6 +34,11 @@ class Button {
     this._btnName = btnName;
     this._bgColor = bg;
     this._color = color;
+  }
+
+  _declOfNum(number, titles) {
+    const cases = [2, 0, 1, 1, 1, 2];
+    return titles[ (number % 100 > 4 && number % 100 < 20) ? 2 : cases[ (number % 10 < 5) ? number % 10 : 5 ] ];
   }
 }
 

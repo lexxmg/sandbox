@@ -1,5 +1,5 @@
-import Button from './btn.js';
-import './btn.css';
+import Button from './button/btn.js';
+import './button/btn.css';
 
 
 const btn1 = new Button();
