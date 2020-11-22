@@ -8,6 +8,10 @@ module.exports = {
     filename: 'main.js',
     publicPath: 'dist/'
   },
+  devServer: {
+    host: '0.0.0.0',
+    port: 3000
+  },
   plugins: [
     new MiniCssExtractPlugin({
       filename: 'style.css'

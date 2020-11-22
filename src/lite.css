@@ -3,3 +3,9 @@
 
   margin: 10px 0;
 }
+
+@media (max-width: 700px) {
+  .wraper-litecoin {
+    width: 100%;
+  }  
+}
