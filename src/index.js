@@ -1,5 +1,6 @@
 import Button from './button/btn.js';
 import './button/btn.css';
+import './lite.css';
 
 
 const btn1 = new Button();
