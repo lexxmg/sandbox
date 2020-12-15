@@ -25,6 +25,8 @@ btn1.addEventListener('click', function() {
 btn2.addEventListener('click', callback);
 
 function callback() {
+  this.test = 'test';
+
   console.log('____________________________');
   console.log('функция callback вызвана');
   console.log('значение this');
